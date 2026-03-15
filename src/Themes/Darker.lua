@@ -1,6 +1,6 @@
 return {
 	Name = "Darker",
-	Accent = Color3.fromRGB(30, 30, 30),
+	Accent = Color3.fromRGB(94, 94, 94),
 
 	AcrylicMain = Color3.fromRGB(30, 30, 30),
 	AcrylicBorder = Color3.fromRGB(60, 60, 60),
@@ -13,7 +13,7 @@ return {
 	Element = Color3.fromRGB(70, 70, 70),
 	ElementBorder = Color3.fromRGB(25, 25, 25),
 	InElementBorder = Color3.fromRGB(55, 55, 55),
-	ElementTransparency = 0.82,
+	ElementTransparency = 0,
 
 	DropdownFrame = Color3.fromRGB(120, 120, 120),
 	DropdownHolder = Color3.fromRGB(35, 35, 35),
