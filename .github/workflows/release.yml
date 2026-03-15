@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
   release:
     types: [ published, prereleased ]
-    
+
 permissions:
   contents: write
   packages: write
@@ -15,27 +15,33 @@ jobs:
 
     steps:
     - name: GitHub Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 20
 
     - name: Setup PNPM
-      uses: pnpm/action-setup@v3
+      uses: pnpm/action-setup@v4
       with:
         version: 8
-        run_install: true
-    
+
+    - name: Install Dependencies
+      run: pnpm install
+
     - name: Setup Aftman
       uses: ok-nick/setup-aftman@v0.3.0
-    
+
     - name: Install Rojo, Lune and DarkLua
       run: aftman install
-        
+
     - name: Build and Compile
-      run: |
-        pnpm run rojo --verbose
-      
+      run: pnpm run rojo --verbose
+
     - name: Bundle Luau
       run: pnpm run bundle
-      
+
     - name: Upload Release Assets
       uses: alexellis/upload-assets@0.4.0
       env:
