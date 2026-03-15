@@ -13,7 +13,7 @@ return {
 	Element = Color3.fromRGB(70, 70, 70),
 	ElementBorder = Color3.fromRGB(25, 25, 25),
 	InElementBorder = Color3.fromRGB(55, 55, 55),
-	ElementTransparency = 0,
+	ElementTransparency = 0.82,
 
 	DropdownFrame = Color3.fromRGB(120, 120, 120),
 	DropdownHolder = Color3.fromRGB(35, 35, 35),

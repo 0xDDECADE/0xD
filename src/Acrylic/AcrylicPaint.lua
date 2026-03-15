@@ -29,7 +29,7 @@ return function(props)
 		}),
 
 		New("Frame", {
-			BackgroundTransparency = 0.45,
+			BackgroundTransparency = 0.1,
 			Size = UDim2.fromScale(1, 1),
 			Name = "Background",
 			ThemeTag = {
