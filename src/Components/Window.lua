@@ -119,9 +119,8 @@ return function(Config)
 		Size = UDim2.fromScale(1, 1),
 		BackgroundTransparency = 1,
 		Image = "rbxassetid://98873618426293",
-		ImageTransparency = 0.85,
-		ScaleType = Enum.ScaleType.Tile,
-		TileSize = UDim2.fromOffset(100, 100),
+		ImageTransparency = 0.4,
+		ScaleType = Enum.ScaleType.Crop,
 		ZIndex = 2,
 	})
 
