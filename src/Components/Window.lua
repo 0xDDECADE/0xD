@@ -124,7 +124,7 @@ return function(Config)
 		ImageTransparency = 0.3,
 		ScaleType = Enum.ScaleType.Fit,
 		Rotation = 15,
-		ZIndex = 2,
+		ZIndex = 0,
 	})
 
 	Window.Root = New("Frame", {
