@@ -115,6 +115,16 @@ return function(Config)
 		Window.ContainerHolder
 	})
 
+	local BgLogo = New("ImageLabel", {
+		Size = UDim2.fromScale(1, 1),
+		BackgroundTransparency = 1,
+		Image = "rbxassetid://98873618426293",
+		ImageTransparency = 0.85,
+		ScaleType = Enum.ScaleType.Tile,
+		TileSize = UDim2.fromOffset(100, 100),
+		ZIndex = 2,
+	})
+
 	Window.Root = New("Frame", {
 		BackgroundTransparency = 1,
 		Size = Window.Size,
@@ -122,6 +132,7 @@ return function(Config)
 		Parent = Config.Parent,
 	}, {
 		Window.AcrylicPaint.Frame,
+		BgLogo,
 		Window.TabDisplay,
 		Window.ContainerCanvas,
 		TabFrame,
