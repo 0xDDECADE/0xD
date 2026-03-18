@@ -1,22 +1,22 @@
 return {
 	Name = "Darker",
-	Accent = Color3.fromRGB(110, 90, 255),
+	Accent = Color3.fromRGB(138, 29, 29),
 
-	AcrylicMain = Color3.fromRGB(18, 18, 24),
-	AcrylicBorder = Color3.fromRGB(50, 50, 70),
-	AcrylicGradient = ColorSequence.new(Color3.fromRGB(20, 18, 30), Color3.fromRGB(12, 12, 18)),
-	AcrylicNoise = 0.96,
+	AcrylicMain = Color3.fromRGB(30, 30, 30),
+	AcrylicBorder = Color3.fromRGB(60, 60, 60),
+	AcrylicGradient = ColorSequence.new(Color3.fromRGB(25, 25, 25), Color3.fromRGB(15, 15, 15)),
+	AcrylicNoise = 0.94,
 
-	TitleBarLine = Color3.fromRGB(45, 45, 65),
-	Tab = Color3.fromRGB(130, 125, 160),
+	TitleBarLine = Color3.fromRGB(65, 65, 65),
+	Tab = Color3.fromRGB(100, 100, 100),
 
-	Element = Color3.fromRGB(55, 55, 75),
-	ElementBorder = Color3.fromRGB(20, 20, 30),
-	InElementBorder = Color3.fromRGB(45, 45, 65),
-	ElementTransparency = 0.8,
+	Element = Color3.fromRGB(70, 70, 70),
+	ElementBorder = Color3.fromRGB(25, 25, 25),
+	InElementBorder = Color3.fromRGB(55, 55, 55),
+	ElementTransparency = 0.82,
 
-	ToggleToggled = Color3.fromRGB(110, 90, 255),
-	ToggleSlider = Color3.fromRGB(100, 100, 130),
+	ToggleToggled = Color3.fromRGB(138, 29, 29), -- สีแดง
+	ToggleSlider = Color3.fromRGB(120,120,120), -- สีตอนปิด
 
 	DropdownFrame = Color3.fromRGB(120, 120, 120),
 	DropdownHolder = Color3.fromRGB(35, 35, 35),

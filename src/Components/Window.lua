@@ -37,17 +37,16 @@ return function(Config)
 	Window.TabWidth = Config.TabWidth
 
 	local Selector = New("Frame", {
-		Size = UDim2.fromOffset(6, 0),
-		BackgroundColor3 = Color3.fromRGB(110, 90, 255),
+		Size = UDim2.fromOffset(4, 0),
+		BackgroundColor3 = Color3.fromRGB(76, 194, 255),
 		Position = UDim2.fromOffset(0, 17),
 		AnchorPoint = Vector2.new(0, 0.5),
-		ThemeTag = { BackgroundColor3 = "Accent" },
+		ThemeTag = {
+			BackgroundColor3 = "Accent",
+		},
 	}, {
-		New("UICorner", { CornerRadius = UDim.new(1, 0) }),
-		New("UIStroke", {
-			Thickness = 1,
-			Transparency = 0.5,
-			ThemeTag = { Color = "Accent" },
+		New("UICorner", {
+			CornerRadius = UDim.new(0, 2),
 		}),
 	})
 
@@ -115,7 +114,6 @@ return function(Config)
 		Window.ContainerAnim,
 		Window.ContainerHolder
 	})
-
 
 	Window.Root = New("Frame", {
 		BackgroundTransparency = 1,
