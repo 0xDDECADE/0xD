@@ -116,7 +116,7 @@ return function(Config)
 	})
 
 	local BgLogo = New("ImageLabel", {
-		Size = UDim2.fromScale(1, 1),
+		Size = UDim2.fromScale(350, 350),
 		BackgroundTransparency = 1,
 		Image = "rbxassetid://98873618426293",
 		ImageTransparency = 0.2,
