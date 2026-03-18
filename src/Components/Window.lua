@@ -116,11 +116,14 @@ return function(Config)
 	})
 
 	local BgLogo = New("ImageLabel", {
-		Size = UDim2.fromScale(1, 1),
+		Size = UDim2.fromOffset(350, 350),
+		Position = UDim2.new(1, 20, 0.5, 0),
+		AnchorPoint = Vector2.new(1, 0.5),
 		BackgroundTransparency = 1,
 		Image = "rbxassetid://98873618426293",
-		ImageTransparency = 0.4,
-		ScaleType = Enum.ScaleType.Crop,
+		ImageTransparency = 0.3,
+		ScaleType = Enum.ScaleType.Fit,
+		Rotation = 15,
 		ZIndex = 2,
 	})
 
