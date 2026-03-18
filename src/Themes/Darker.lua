@@ -10,10 +10,13 @@ return {
 	TitleBarLine = Color3.fromRGB(65, 65, 65),
 	Tab = Color3.fromRGB(100, 100, 100),
 
-	Element = Color3.fromRGB(138, 29, 29),
+	Element = Color3.fromRGB(70, 70, 70),
 	ElementBorder = Color3.fromRGB(25, 25, 25),
 	InElementBorder = Color3.fromRGB(55, 55, 55),
 	ElementTransparency = 0.82,
+
+	ToggleToggled = Color3.fromRGB(138, 29, 29), -- สีแดง
+	ToggleSlider = Color3.fromRGB(120,120,120), -- สีตอนปิด
 
 	DropdownFrame = Color3.fromRGB(120, 120, 120),
 	DropdownHolder = Color3.fromRGB(35, 35, 35),

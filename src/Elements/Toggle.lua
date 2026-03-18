@@ -50,7 +50,7 @@ function Element:New(Idx, Config)
 		Parent = ToggleFrame.Frame,
 		BackgroundTransparency = 1,
 		ThemeTag = {
-			BackgroundColor3 = "Accent",
+			BackgroundColor3 = "Element",
 		},
 	}, {
 		New("UICorner", {
@@ -76,10 +76,10 @@ function Element:New(Idx, Config)
 			TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out),
 			{ Position = UDim2.new(0, Toggle.Value and 19 or 2, 0.5, 0) }
 		):Play()
-		TweenService:Create(
+			TweenService:Create(
 			ToggleSlider,
 			TweenInfo.new(0.25, Enum.EasingStyle.Quint, Enum.EasingDirection.Out),
-			{ BackgroundTransparency = Toggle.Value and 0 or 1 }
+			{ BackgroundTransparency = Toggle.Value and 0.2 or 0.5 }
 		):Play()
 		ToggleCircle.ImageTransparency = Toggle.Value and 0 or 0.5
 
