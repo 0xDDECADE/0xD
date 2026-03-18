@@ -116,15 +116,13 @@ return function(Config)
 	})
 
 	local BgLogo = New("ImageLabel", {
-		Size = UDim2.fromOffset(350, 350),
-		Position = UDim2.new(1, 20, 0.5, 0),
-		AnchorPoint = Vector2.new(1, 0.5),
+		Size = UDim2.fromScale(1, 1),
 		BackgroundTransparency = 1,
 		Image = "rbxassetid://98873618426293",
-		ImageTransparency = 0.3,
-		ScaleType = Enum.ScaleType.Fit,
-		Rotation = 15,
-		ZIndex = 2,
+		ImageTransparency = 0.2,
+		ScaleType = Enum.ScaleType.Tile,
+		TileSize = UDim2.fromOffset(100, 100),
+		ZIndex = 1,
 	})
 
 	Window.Root = New("Frame", {
