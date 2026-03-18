@@ -11,7 +11,7 @@ return {
 	Tab = Color3.fromRGB(100, 100, 100),
 
 	Element = Color3.fromRGB(138, 29, 29),
-	ElementBorder = Color3.fromRGB(56, 0, 0),
+	ElementBorder = Color3.fromRGB(25, 25, 25),
 	InElementBorder = Color3.fromRGB(55, 55, 55),
 	ElementTransparency = 0.82,
 
