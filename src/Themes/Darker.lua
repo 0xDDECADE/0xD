@@ -1,6 +1,6 @@
 return {
 	Name = "Darker",
-	Accent = Color3.fromRGB(94, 94, 94),
+	Accent = Color3.fromRGB(138, 29, 29),
 
 	AcrylicMain = Color3.fromRGB(30, 30, 30),
 	AcrylicBorder = Color3.fromRGB(60, 60, 60),
@@ -10,8 +10,8 @@ return {
 	TitleBarLine = Color3.fromRGB(65, 65, 65),
 	Tab = Color3.fromRGB(100, 100, 100),
 
-	Element = Color3.fromRGB(70, 70, 70),
-	ElementBorder = Color3.fromRGB(25, 25, 25),
+	Element = Color3.fromRGB(138, 29, 29),
+	ElementBorder = Color3.fromRGB(56, 0, 0),
 	InElementBorder = Color3.fromRGB(55, 55, 55),
 	ElementTransparency = 0.82,
 
