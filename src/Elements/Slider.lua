@@ -34,14 +34,19 @@ function Element:New(Idx, Config)
 	Slider.SetTitle = SliderFrame.SetTitle
 	Slider.SetDesc = SliderFrame.SetDesc
 
-	local SliderDot = New("ImageLabel", {
+	local SliderDot = New("Frame", {
 		AnchorPoint = Vector2.new(0, 0.5),
 		Position = UDim2.new(0, -7, 0.5, 0),
 		Size = UDim2.fromOffset(14, 14),
-		Image = "http://www.roblox.com/asset/?id=12266946128",
-		ThemeTag = {
-			ImageColor3 = "Accent",
-		},
+		BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+		ThemeTag = { BackgroundColor3 = "Accent" },
+	}, {
+		New("UICorner", { CornerRadius = UDim.new(1, 0) }),
+		New("UIStroke", {
+			Thickness = 2,
+			Transparency = 0.4,
+			ThemeTag = { Color = "Accent" },
+		}),
 	})
 
 	local SliderRail = New("Frame", {
@@ -80,7 +85,7 @@ function Element:New(Idx, Config)
 	})
 
 	local SliderInner = New("Frame", {
-		Size = UDim2.new(1, 0, 0, 4),
+		Size = UDim2.new(1, 0, 0, 2),
 		AnchorPoint = Vector2.new(1, 0.5),
 		Position = UDim2.new(1, -10, 0.5, 0),
 		BackgroundTransparency = 0.4,
