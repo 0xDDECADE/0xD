@@ -124,12 +124,12 @@ return function(Config)
 	})
 
 	for i = 1, 80 do
-		local size = math.random(1, 3)
+		local size = math.random(2, 8)
 		local star = New("Frame", {
 			Size = UDim2.fromOffset(size, size),
 			Position = UDim2.new(math.random(), 0, math.random(), 0),
-			BackgroundColor3 = Color3.fromRGB(255, 60, 60),
-			BackgroundTransparency = math.random(60, 85) / 100,
+			BackgroundColor3 = Color3.fromRGB(255, 255, 255),
+			BackgroundTransparency = math.random(50, 80) / 100,
 			ZIndex = 1,
 			Parent = StarContainer,
 		}, {
