@@ -1,5 +1,4 @@
 -- i will rewrite this someday
-local TweenService = game:GetService("TweenService")
 local UserInputService = game:GetService("UserInputService")
 local Mouse = game:GetService("Players").LocalPlayer:GetMouse()
 local Camera = game:GetService("Workspace").CurrentCamera
@@ -116,34 +115,6 @@ return function(Config)
 		Window.ContainerHolder
 	})
 
-	local StarContainer = New("Frame", {
-		Size = UDim2.fromScale(1, 1),
-		BackgroundTransparency = 1,
-		ClipsDescendants = true,
-		ZIndex = 1,
-	})
-
-	for i = 1, 80 do
-		local size = math.random(2, 8)
-		local star = New("Frame", {
-			Size = UDim2.fromOffset(size, size),
-			Position = UDim2.new(math.random(), 0, math.random(), 0),
-			BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-			BackgroundTransparency = math.random(50, 80) / 100,
-			ZIndex = 1,
-			Parent = StarContainer,
-		}, {
-			New("UICorner", { CornerRadius = UDim.new(1, 0) }),
-		})
-
-		task.spawn(function()
-			while task.wait(math.random(2, 5) + math.random()) do
-				TweenService:Create(star, TweenInfo.new(0.8), {
-					BackgroundTransparency = math.random(10, 80) / 100,
-				}):Play()
-			end
-		end)
-	end
 
 	Window.Root = New("Frame", {
 		BackgroundTransparency = 1,
@@ -152,7 +123,6 @@ return function(Config)
 		Parent = Config.Parent,
 	}, {
 		Window.AcrylicPaint.Frame,
-		StarContainer,
 		Window.TabDisplay,
 		Window.ContainerCanvas,
 		TabFrame,
