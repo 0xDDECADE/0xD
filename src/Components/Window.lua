@@ -128,8 +128,8 @@ return function(Config)
 		local star = New("Frame", {
 			Size = UDim2.fromOffset(size, size),
 			Position = UDim2.new(math.random(), 0, math.random(), 0),
-			BackgroundColor3 = Color3.fromRGB(255, 255, 255),
-			BackgroundTransparency = math.random(30, 60) / 100,
+			BackgroundColor3 = Color3.fromRGB(255, 60, 60),
+			BackgroundTransparency = math.random(60, 85) / 100,
 			ZIndex = 1,
 			Parent = StarContainer,
 		}, {
